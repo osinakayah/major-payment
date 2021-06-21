@@ -2,12 +2,12 @@
 require('dotenv').config()
 module.exports = {
   development: {
-    username: process.env.DEV_DB_USERNAME,
-    password: process.env.DEV_DB_PASSWORD,
-    database: process.env.DEV_DB_NAME,
-    host: process.env.DEV_DB_HOSTNAME,
-    port: process.env.DEV_DB_PORT,
-    dialect: process.env.DEV_DB_USERNAME_DIALECT,
+    username: process.env.ONLY_PAYMENT_DB_USERNAME,
+    password: process.env.ONLY_PAYMENT_DB_PASSWORD,
+    database: process.env.ONLY_PAYMENT_DB_NAME,
+    host: process.env.ONLY_PAYMENT_DB_HOSTNAME,
+    port: process.env.ONLY_PAYMENT_DB_PORT,
+    dialect: process.env.ONLY_PAYMENT_DB_USERNAME_DIALECT,
     dialectOptions: {
       bigNumberStrings: true
     },

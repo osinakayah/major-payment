@@ -8,12 +8,12 @@ export { Ethereum };
 
 export const saveMnemonic = async (mnemonicPhrase?: string) => {
   const data = {
-    mnemonic: 'lava make mango shock caution issue crew soldier output laugh noise law',
+    mnemonic: '',
   };
   if (typeof mnemonicPhrase === 'undefined') {
-    data.mnemonic = generateMnemonic()
+    data.mnemonic =  generateMnemonic()
   }
-  if (mnemonicPhrase && validateMnemonic(mnemonicPhrase)) {
+  else if (mnemonicPhrase && validateMnemonic(mnemonicPhrase)) {
     data.mnemonic = mnemonicPhrase
   } else {
     throw new Error('Error generating mnemonic')

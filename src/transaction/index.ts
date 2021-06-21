@@ -59,10 +59,9 @@ export class Transaction {
       {
         jobId: reference,
         removeOnComplete: true,
-        timeout: this.setMinutes(1),
-
+        timeout: this.setMinutes(7),
         attempts: 3,
-        backoff: this.setMinutes(1),
+        backoff: this.setMinutes(3),
         delay: this.setMinutes(0),
       },
     );
